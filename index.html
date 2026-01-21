@@ -3,21 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lingzhen Li's Homepage</title>
+    <title>Lingzhen Li - Homepage</title>
+    <style>
+        /* 页面整体背景 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8; /* 浅灰背景，保护视力 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        /* 中间白色卡片的样式 */
+        .card {
+            background-color: white;
+            padding: 40px 50px;
+            border-radius: 12px; /* 圆角 */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 柔和的阴影 */
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+        }
+
+        /* 名字标题样式 */
+        h1 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* 学校名称样式 */
+        .university {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        /* 分割线 */
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e1e4e8;
+            margin: 20px 0;
+        }
+
+        /* 个人介绍文字 */
+        .bio {
+            text-align: left;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* 邮箱部分的样式 */
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            display: inline-block;
+        }
+
+        .contact-info strong {
+            color: #2c3e50;
+        }
+
+        /* 链接样式 */
+        a {
+            color: #0366d6;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #004494; /* 鼠标放上去变深蓝 */
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 40px;">
+<body>
 
-    <h1>Hello, this is my blog</h1>
-    
-    <hr>
-    
-    <h3>Personal Information</h3>
-    
-    <p><strong>My Name:</strong> Lingzhen Li</p>
-    
-    <p><strong>My Email:</strong> <a href="mailto:u202310141@hust.edu.cn">u202310141@hust.edu.cn</a></p>
+    <div class="card">
+        <!-- 名字 -->
+        <h1>Lingzhen Li</h1>
+        
+        <!-- 学校 -->
+        <div class="university">
+            Huazhong University of Science and Technology (HUST)
+        </div>
 
-    <p><em>(Huazhong University of Science and Technology)</em></p>
+        <hr>
+
+        <!-- 简单的个人简介 (你可以根据需要修改这里) -->
+        <div class="bio">
+            <p>
+                Hello! I am a student at Huazhong University of Science and Technology. 
+                Welcome to my personal homepage. 
+            </p>
+        </div>
+
+        <!-- 联系方式 (重点部分，OpenReview 要看) -->
+        <div class="contact-info">
+            <strong>Email:</strong> 
+            <a href="mailto:u202310141@hust.edu.cn">u202310141@hust.edu.cn</a>
+        </div>
+    </div>
 
 </body>
 </html>
